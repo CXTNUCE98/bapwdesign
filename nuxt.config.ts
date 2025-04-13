@@ -9,7 +9,16 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      viewport: 'width=device-width,initial-scale=1',
+      link: [
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+        // Add fallbacks for older browsers
+        { rel: 'icon', type: 'image/png', href: '/favicon-96x96.png' }
+      ],
+      meta: [
+            { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+            { name: 'description', content: 'Bapw Design' },
+            { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' },
+          ],
     },
     baseURL: '/',
   },

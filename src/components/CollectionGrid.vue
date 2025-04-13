@@ -29,7 +29,7 @@ const collections = [
           <div
             v-for="(collection, index) in collections"
             :key="index"
-            class="group bg-white p-6 hover:shadow-xl transition duration-300 text-center"
+            class="group bg-white p-6  transition duration-300 text-center"
           >
             <h3 class="text-25px font-semibold mb-4 group-hover:text-black transition duration-300 playfair-display">
               {{ collection.title }}

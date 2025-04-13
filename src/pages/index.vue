@@ -80,7 +80,7 @@ const testimonials = [
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 ">
 
                     <div v-for="(testimonial, index) in testimonials" :key="index"
-                        class="bg-white p-6 rounded-32px shadow-lg transform transition-all duration-700 hover:-translate-y-2"
+                        class="bg-white p-6 rounded-32px shadow-lg transform transition-all duration-700 "
                         :style="{ transitionDelay: index * 100 + 'ms' }">
                         <div class="flex items-center gap-4 mb-4">
                             <img src="https://static.vecteezy.com/system/resources/previews/025/402/511/large_2x/statue-of-model-mannequin-in-showcasing-fashion-formal-clothes-in-abstract-concept-isolate-on-multi-color-pastel-background-promotion-discount-sale-with-geometric-shape-product-stand-3d-rendering-photo.jpg"
@@ -128,13 +128,6 @@ const testimonials = [
 }
 
 /* Transform utilities */
-.hover\:scale-105:hover {
-    transform: scale(1.05);
-}
-
-.hover\:-translate-y-2:hover {
-    transform: translateY(-0.5rem);
-}
 
 /* Media queries */
 @media (max-width: 768px) {

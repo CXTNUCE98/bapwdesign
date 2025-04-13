@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import Facebook from "@/public/social_facebook.png"
+import Instagram from "@/public/social_instagram.png"
+
 const footerLinks = {
     'Trang': [
         { label: 'Bộ sưu tập', path: '/collections' },
@@ -19,9 +22,9 @@ const footerLinks = {
 };
 
 const socialLinks = [
-    { icon: 'facebook', path: 'https://facebook.com' },
-    { icon: 'instagram', path: 'https://instagram.com' },
-    { icon: 'twitter', path: 'https://twitter.com' }
+    { icon: 'facebook', path: Facebook, redirect: 'https://www.facebook.com/talafanMU' },
+    { icon: 'instagram', path: Instagram, redirect: 'https://www.instagram.com/thuongg149/' },
+    // { icon: 'twitter', path: 'https://twitter.com', }
 ];
 </script>
 
@@ -37,14 +40,15 @@ const socialLinks = [
                         Design
                     </NuxtLink>
 
-                    <p class="text-gray-600 mb-6 text-22px ">
+                    <p class="text-gray-600 mb-6 text-22px md:px-0 px-2">
                         Thiết kế theo yêu cầu, định hình phong cách của bạn
                     </p>
-                    <div class="flex space-x-4 md:justify-start justify-center">
-                        <a v-for="social in socialLinks" :key="social.icon" :href="social.path" target="_blank"
+                    <div class="flex gap-54px space-x-4 md:justify-start justify-center">
+                        <a v-for="social in socialLinks" :key="social.icon" :href="social.redirect" target="_blank"
                             rel="noopener noreferrer" class="text-gray-600 hover:text-black transition-colors">
-                            <span class="sr-only">{{ social.icon }}</span>
-                            <i :class="'fab fa-' + social.icon"></i>
+                            <img :src="social.path" alt="social">
+                            <!-- <span class="sr-only">{{ social.icon }}</span> -->
+                            <!-- <i :class="'fab fa-' + social.icon"></i> -->
                         </a>
                     </div>
                 </div>
@@ -78,7 +82,7 @@ const socialLinks = [
 
 <style scoped>
 .container {
-    max-width: 1200px;
+    max-width: 1152px;
 }
 
 /* Smooth transitions */

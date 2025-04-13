@@ -37,10 +37,7 @@ const activeMenu = computed(() => router.currentRoute.value.path);
 </script>
 
 <template>
-    <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/90" :class="{
-        'bg-white/90 backdrop-blur-sm shadow-sm': isScrolled,
-        'bg-transparent': !isScrolled
-    }">
+    <header class="fixed top-0 left-0 right-0 z-50 shadow-sm transition-all duration-300 bg-white/90" >
         <div class="container mx-auto px-4">
             <nav class="flex items-center justify-between h-20">
                 <!-- Logo -->

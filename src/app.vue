@@ -1,5 +1,7 @@
 <script setup lang="ts">
-
+useHead({
+  title: 'Bapw Design'
+})
 </script>
 
 <template>
@@ -55,4 +57,6 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+
 </style>

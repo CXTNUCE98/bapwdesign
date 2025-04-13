@@ -90,13 +90,13 @@ const handleMouseLeave = () => {
                             />
 
                         <!-- Decorative Elements -->
-                        <div class="absolute -top-4 -left-4 w-16 sm:w-20 md:w-24 h-16 sm:h-20 md:h-24 
+                        <!-- <div class="absolute -top-4 -left-4 w-16 sm:w-20 md:w-24 h-16 sm:h-20 md:h-24 
                             bg-[#C4A484] rounded-full opacity-20 transition-transform duration-500
                             group-hover:scale-125 group-hover:opacity-30"></div>
                         
                         <div class="absolute -bottom-4 -right-4 w-20 sm:w-24 md:w-32 h-20 sm:h-24 md:h-32 
                             bg-[#C4A484] rounded-full opacity-20 transition-transform duration-500
-                            group-hover:scale-125 group-hover:opacity-30"></div>
+                            group-hover:scale-125 group-hover:opacity-30"></div> -->
 
                         <!-- Animated Border -->
                         <div class="absolute inset-0 border-2 border-[#C4A484] opacity-0 

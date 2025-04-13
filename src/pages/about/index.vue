@@ -36,16 +36,7 @@ const submitForm = () => {
 <template>
     <div class="mx-auto">
         <!-- Hero -->
-        <section class="relative h-64 md:h-80 bg-cover bg-center mb-16">
-            <img :src="HeroImage" alt="Interior design" class="w-full h-full object-cover" />
-            <div class="absolute inset-0 flex items-end justify-center">
-                <div
-                    class="bg-white rounded-t-37px bg-opacity-90 py-4 md:(py-10) px-12 text-center animate-on-scroll opacity-0 translate-y-5 transition-all duration-700">
-                    <h1 class="text-28px md:text-50px font-light mb-1 playfair-display font-normal">Về chúng tôi</h1>
-                    <p class="text-12px md:(text-22px pt-2) text-gray-600 ">Trang chủ / Về chúng tôi</p>
-                </div>
-            </div>
-        </section>
+        <SharedHeaderPage title="Về chúng tôi" subTitle="Trang chủ / Về chúng tôi"/>
 
         <!-- Quote -->
         <section class="max-w-875px md:block hidden mx-auto px-6 md:px-0 mb-24 h-428px">
