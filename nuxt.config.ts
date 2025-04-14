@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr: true,
   srcDir: 'src/',
   imports: {
     dirs: [
@@ -23,7 +24,10 @@ export default defineNuxtConfig({
     baseURL: '/',
   },
   devtools: { enabled: true },
-  modules: ['@vueuse/nuxt', "@nuxtjs/tailwindcss", '@element-plus/nuxt', '@unocss/nuxt', '@vue-macros/nuxt'],
+  modules: ['@vueuse/nuxt', "@nuxtjs/tailwindcss", '@element-plus/nuxt', '@unocss/nuxt', '@vue-macros/nuxt', '@nuxtjs/sitemap'],
+  sitemap: {
+    siteUrl: 'https://bapwdesign.vercel.app/',
+  },
   postcss: {
     plugins: {
       tailwindcss: {},

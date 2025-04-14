@@ -4,15 +4,16 @@ import Instagram from "@/public/social_instagram.png"
 
 const footerLinks = {
     'Trang': [
+        { label: 'Trang chủ', path: '/' },
         { label: 'Bộ sưu tập', path: '/collections' },
-        { label: 'Sản phẩm mới', path: '/new-arrivals' },
-        { label: 'Bán chạy', path: '/best-sellers' },
-        { label: 'Khuyến mãi', path: '/sale' }
+        { label: 'Dịch vụ', path: '/service' },
+        { label: 'Về chúng tôi', path: '/about' }
     ],
     'Bộ sưu tập': [
-        { label: 'Xuân Hè', path: '/spring-summer' },
-        { label: 'Thu Đông', path: '/fall-winter' },
-        { label: 'Đặc biệt', path: '/special' }
+        { label: 'Bộ sưu tập 1', path: '/bst1' },
+        { label: 'Bộ sưu tập 2', path: '/bst2' },
+        { label: 'Bộ sưu tập 3', path: '/bst3' },
+        { label: 'Bộ sưu tập 4', path: '/bst4' }
     ],
     'Liên hệ': [
         { label: 'Vinhome Smartcity', path: 'mailto:info@bdesign.com' },
@@ -29,7 +30,7 @@ const socialLinks = [
 </script>
 
 <template>
-    <footer class="pt-16 pb-8">
+    <footer class="mt-24 pt-16 pb-8 border-t-1 border-#C9C9C9 ">
         <div class="container mx-auto px-4">
             <!-- Main Footer Content -->
             <div class="flex flex-col gap-8 mb-12 justify-center md:(justify-start flex-row)">

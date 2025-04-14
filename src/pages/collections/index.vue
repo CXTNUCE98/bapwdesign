@@ -7,53 +7,62 @@ import Product4 from "@/public/colection_2.jpg"
 import Product5 from "@/public/colection_3.jpg"
 import Product6 from "@/public/colection_4.jpg"
 
+import Product7 from "@/public/products/product_1.png"
+import Product8 from "@/public/products/product_2.png"
+import Product9 from "@/public/products/product_3.png"
+import Product10 from "@/public/products/product_4.png"
+import Product11 from "@/public/products/product_5.png"
+import Product12 from "@/public/products/product_6.png"
+import Product13 from "@/public/products/product_7.png"
+import Product14 from "@/public/products/product_8.png"
+
 // Data for the gallery items
 const galleryItems = [
     {
         id: 1,
-        image: Product3,
+        image: Product7,
         title: 'Title',
         subtitle: 'Subtitle / Subtitle'
     },
     {
         id: 2,
-        image: Product2,
+        image: Product8,
         title: 'Title',
         subtitle: 'Subtitle / Subtitle'
     },
     {
         id: 3,
-        image: Product4,
+        image: Product9,
         title: 'Title',
         subtitle: 'Subtitle / Subtitle'
     },
     {
         id: 4,
-        image: Product6,
+        image: Product10,
         title: 'Title',
         subtitle: 'Subtitle / Subtitle'
     },
     {
         id: 5,
-        image: Product2,
+        image: Product11,
         title: 'Title',
         subtitle: 'Subtitle / Subtitle'
     },
     {
         id: 6,
-        image: Product5,
+        image: Product12,
         title: 'Title',
         subtitle: 'Subtitle / Subtitle'
     },
     {
         id: 7,
-        image: Product1,
+        image: Product14,
         title: 'Title',
         subtitle: 'Subtitle / Subtitle'
     },
     {
         id: 8,
-        image: Product6,
+        image: Product13,
         title: 'Title',
         subtitle: 'Subtitle / Subtitle'
     }
@@ -62,7 +71,7 @@ const galleryItems = [
 const galleryItems1 = [
     {
         id: 1,
-        image: Product3,
+        image: Product10,
         title: 'Title',
         subtitle: 'Subtitle / Subtitle'
     },
@@ -74,25 +83,25 @@ const galleryItems1 = [
     },
     {
         id: 3,
-        image: Product5,
+        image: Product14,
         title: 'Title',
         subtitle: 'Subtitle / Subtitle'
     },
     {
         id: 4,
-        image: Product6,
-        title: 'Title',
-        subtitle: 'Subtitle / Subtitle'
-    },
-    {
-        id: 5,
         image: Product2,
         title: 'Title',
         subtitle: 'Subtitle / Subtitle'
     },
     {
+        id: 5,
+        image: Product4,
+        title: 'Title',
+        subtitle: 'Subtitle / Subtitle'
+    },
+    {
         id: 6,
-        image: Product1,
+        image: Product6,
         title: 'Title',
         subtitle: 'Subtitle / Subtitle'
     },
@@ -104,7 +113,7 @@ const galleryItems1 = [
     },
     {
         id: 8,
-        image: Product5,
+        image: Product9,
         title: 'Title',
         subtitle: 'Subtitle / Subtitle'
     }
@@ -164,7 +173,7 @@ const galleryItems2 = [
 const galleryItems3 = [
     {
         id: 1,
-        image: Product6,
+        image: Product8,
         title: 'Title',
         subtitle: 'Subtitle / Subtitle'
     },
@@ -182,31 +191,31 @@ const galleryItems3 = [
     },
     {
         id: 4,
-        image: Product3,
+        image: Product10,
         title: 'Title',
         subtitle: 'Subtitle / Subtitle'
     },
     {
         id: 5,
-        image: Product2,
+        image: Product12,
         title: 'Title',
         subtitle: 'Subtitle / Subtitle'
     },
     {
         id: 6,
-        image: Product5,
+        image: Product1,
         title: 'Title',
         subtitle: 'Subtitle / Subtitle'
     },
     {
         id: 7,
-        image: Product4,
+        image: Product6,
         title: 'Title',
         subtitle: 'Subtitle / Subtitle'
     },
     {
         id: 8,
-        image: Product2,
+        image: Product9,
         title: 'Title',
         subtitle: 'Subtitle / Subtitle'
     }
