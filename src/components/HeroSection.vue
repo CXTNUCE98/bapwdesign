@@ -52,12 +52,12 @@ const swiperOptions = {
                 <!-- Content -->
                 <div class="relative z-20 h-full container mx-auto px-4 flex items-center">
                     <div class="max-w-2xl md:max-w-3xl lg:max-w-4xl">
-                        <h1 class="text-32px md:text-85px md:leading-120% font-bold mb-4 md:mb-6 playfair-display
-                            transform transition-all duration-700 translate-y-0 opacity-100 text-#000000">
+                        <h1 class="text-32px md:text-75px md:leading-120% font-bold mb-4 md:mb-6 playfair-display
+                            transform transition-all duration-700 translate-y-0 opacity-100 text-#292F36">
                             {{ slide.title }}
                         </h1>
-                        <p class="text-base md:text-xl mb-6 md:mb-8 
-                            transform transition-all duration-700 delay-200 translate-y-0 opacity-100 text-#000000">
+                        <p class="text-base leading-200% md:text-xl mb-6 md:mb-8  font-400
+                            transform transition-all duration-700 delay-200 translate-y-0 opacity-100 text-#444444">
                             {{ slide.subtitle }}
                         </p>
                         <div class="bg-#292F36 text-#FFFFFF w-200px md:w-220px h-48px md:h-75px px-48px py-26px rounded-12px 

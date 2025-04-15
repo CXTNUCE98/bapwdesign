@@ -310,7 +310,7 @@ onMounted(() => {
                     <div class="overflow-hidden bg-white  ">
                         <img :src="item.image" :alt="item.title"
                             class="w-full h-auto transition-transform duration-500 " />
-                        <div class="px-3 py-2">
+                        <div class="">
                             <h3 class="text-25px  playfair-display text-#292F36">{{ item.title }} </h3>
                             <p class="text-22px text-#4D5053">{{ item.subtitle }}</p>
                         </div>

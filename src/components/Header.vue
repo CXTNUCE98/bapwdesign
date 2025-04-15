@@ -37,24 +37,23 @@ const activeMenu = computed(() => router.currentRoute.value.path);
 </script>
 
 <template>
-    <header class="fixed top-0 left-0 right-0 z-50 shadow-sm transition-all duration-300 bg-white/90" >
+    <header class="fixed top-0 left-0 right-0 z-50 shadow-sm transition-all duration-300 bg-white/90">
         <div class="container mx-auto px-4">
             <nav class="flex items-center justify-between h-20">
                 <!-- Logo -->
                 <NuxtLink to="/"
-                    class="text-40px font-bold flex gap-2 items-end playfair-display text-#292F36 transform transition-all duration-300 hover:scale-105">
-                    <img src="../public/logo.png" class="pb-3 h-48px" />
-                    Design
+                    class="text-40px font-bold flex gap-2 items-end playfair-display text-#292F36 transform transition-all duration-300">
+                    <img src="../public/logo.png" class="h-48px" />
                 </NuxtLink>
 
                 <!-- Desktop Menu -->
                 <ul class="hidden md:flex items-center space-x-8">
                     <li v-for="(item) in menuItems" :key="item.path">
                         <NuxtLink :to="item.path" :class="{ '!text-#CDA274': activeMenu === item.path }"
-                            class="text-gray-600 text-20px hover:text-black transition-all duration-300 relative group">
+                            class="text-gray-600 text-20px transition-all duration-300 relative group">
                             {{ item.label }}
                             <span
-                                class="absolute bottom-0 left-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
+                                class="absolute bottom-0 left-0 w-0 h-0.5 bg-black transition-all duration-300"></span>
                         </NuxtLink>
                     </li>
                 </ul>
@@ -71,35 +70,34 @@ const activeMenu = computed(() => router.currentRoute.value.path);
                     </svg>
                 </button>
             </nav>
-
-            <!-- Mobile Menu -->
-            <transition name="slide-right">
-                <div v-if="isMenuOpen" class="fixed inset-0 z-50 flex md:hidden">
-                    <!-- Overlay -->
-                    <div class="flex-1 bg-black/40" @click="closeMenu"></div>
-
-                    <!-- Sidebar -->
-                    <div class="w-4/5 max-w-xs bg-white h-full p-6 relative shadow-lg">
-                        <!-- Close Button -->
-                        <button @click="closeMenu"
-                            class="absolute top-4 right-4 text-2xl text-gray-600 hover:text-black">
-                            &times;
-                        </button>
-
-                        <!-- Menu Items -->
-                        <ul class="mt-12 space-y-6">
-                            <li v-for="item in menuItems" :key="item.path">
-                                <NuxtLink :to="item.path" @click="closeMenu"
-                                    :class="{ '!text-[#CDA274]': activeMenu === item.path }"
-                                    class="block text-[18px] text-gray-800 playfair-inter hover:text-black transition duration-300">
-                                    {{ item.label }}
-                                </NuxtLink>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </transition>
         </div>
+
+        <!-- Mobile Menu Overlay - Full screen -->
+        <div v-if="isMenuOpen" class="fixed inset-0 bg-black/40 z-40 md:hidden transition-opacity duration-300"
+            :class="isMenuOpen ? 'opacity-100' : 'opacity-0'" @click="closeMenu">
+        </div>
+
+        <!-- Mobile Menu Sidebar - Separate from overlay -->
+        <transition name="slide-right">
+            <div v-if="isMenuOpen"
+                class="fixed top-0 right-0 w-4/5 max-w-xs bg-white h-full p-6 z-50 shadow-lg md:hidden">
+                <!-- Close Button -->
+                <button @click="closeMenu" class="absolute top-4 right-4 text-2xl text-gray-600 hover:text-black">
+                    &times;
+                </button>
+
+                <!-- Menu Items -->
+                <ul class="mt-12 space-y-6">
+                    <li v-for="item in menuItems" :key="item.path">
+                        <NuxtLink :to="item.path" @click="closeMenu"
+                            :class="{ '!text-#CDA274': activeMenu === item.path }"
+                            class="block text-18px text-gray-800 playfair-inter hover:text-black transition duration-300">
+                            {{ item.label }}
+                        </NuxtLink>
+                    </li>
+                </ul>
+            </div>
+        </transition>
     </header>
 </template>
 

@@ -44,12 +44,12 @@ const handleMouseLeave = () => {
         <div class="container mx-auto px-4">
             <div class="flex flex-col-reverse md:flex-row items-center gap-8 md:gap-12">
                 <!-- Text Content -->
-                <div class="md:(w-472px space-y-8 text-left) space-y-6 px-4 text-center">
-                    <h2 class="text-3xl sm:text-4xl md:text-5xl playfair-display
+                <div class="md:(w-472px space-y-8 text-left)  space-y-6 px-4 text-center">
+                    <div class="text-3xl sm:text-36px md:text-50px playfair-display leading-125%
                         transform transition-all duration-700"
                         :class="{ 'translate-x-0 opacity-100': isVisible, '-translate-x-20 opacity-0': !isVisible }">
                         Chúng tôi tạo ra nghệ thuật
-                    </h2>
+                    </div>
                     <p class="text-base sm:text-lg md:(text-22px leading-150%) text-gray-600 
                         transform transition-all duration-700 delay-100 font-400"
                         :class="{ 'translate-x-0 opacity-100': isVisible, '-translate-x-20 opacity-0': !isVisible }">

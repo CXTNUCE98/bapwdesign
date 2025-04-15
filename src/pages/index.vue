@@ -1,24 +1,5 @@
 <script lang="ts" setup>
 
-
-const collections = [
-    {
-        title: 'Collection',
-        description: 'Here are many variations of the passages of the available, majority',
-        image: 'https://static.vecteezy.com/system/resources/previews/025/402/511/large_2x/statue-of-model-mannequin-in-showcasing-fashion-formal-clothes-in-abstract-concept-isolate-on-multi-color-pastel-background-promotion-discount-sale-with-geometric-shape-product-stand-3d-rendering-photo.jpg'
-    },
-    {
-        title: 'Collection',
-        description: 'Here are many variations of the passages of the available, majority',
-        image: 'https://static.vecteezy.com/system/resources/previews/025/402/511/large_2x/statue-of-model-mannequin-in-showcasing-fashion-formal-clothes-in-abstract-concept-isolate-on-multi-color-pastel-background-promotion-discount-sale-with-geometric-shape-product-stand-3d-rendering-photo.jpg'
-    },
-    {
-        title: 'Collection',
-        description: 'Here are many variations of the passages of the available, majority',
-        image: 'https://static.vecteezy.com/system/resources/previews/025/402/511/large_2x/statue-of-model-mannequin-in-showcasing-fashion-formal-clothes-in-abstract-concept-isolate-on-multi-color-pastel-background-promotion-discount-sale-with-geometric-shape-product-stand-3d-rendering-photo.jpg'
-    }
-];
-
 const stats = [
     { number: '12', label: 'Kinh nghiệm' },
     { number: '85', label: 'Sản phẩm' },
@@ -74,9 +55,9 @@ const testimonials = [
         <Collections />
 
         <!-- Testimonials Section -->
-        <section class="py-20 ">
-            <div class="container mx-auto rounded-48px bg-#F4F0EC px-8 py-12">
-                <h2 class="text-50px text-center mb-12 font-600 playfair-display text-#292F36">Khách hàng nghĩ gì về chúng tôi</h2>
+        <section class="py-20 md:px-0 px-4">
+            <div class="container mx-auto rounded-48px bg-#F4F0EC px-4 md:px-8 py-12">
+                <h2 class="text-32px md:text-50px text-center mb-12 font-500 playfair-display text-#292F36">Khách hàng nghĩ gì về chúng tôi</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 ">
 
                     <div v-for="(testimonial, index) in testimonials" :key="index"
@@ -85,9 +66,9 @@ const testimonials = [
                         <div class="flex items-center gap-4 mb-4">
                             <img src="https://static.vecteezy.com/system/resources/previews/025/402/511/large_2x/statue-of-model-mannequin-in-showcasing-fashion-formal-clothes-in-abstract-concept-isolate-on-multi-color-pastel-background-promotion-discount-sale-with-geometric-shape-product-stand-3d-rendering-photo.jpg"
                                 alt="Avatar" class="w-12 h-12 rounded-full">
-                            <div class="playfair-display font-400">
-                                <h4 class="font-semibold text-25px">{{ testimonial.name }}</h4>
-                                <p class="text-18px text-gray-600">{{ testimonial.role }}</p>
+                            <div class="font-400">
+                                <h4 class="font-semibold playfair-display text-25px">{{ testimonial.name }}</h4>
+                                <p class="text-16px text-gray-600">{{ testimonial.role }}</p>
                             </div>
                         </div>
                         <p class="text-gray-600 italic text-18px font-300">{{ testimonial.comment }}</p>

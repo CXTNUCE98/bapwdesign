@@ -36,7 +36,7 @@ const submitForm = () => {
 <template>
     <div class="mx-auto">
         <!-- Hero -->
-        <SharedHeaderPage title="Về chúng tôi" subTitle="Trang chủ / Về chúng tôi"/>
+        <SharedHeaderPage title="Về chúng tôi" subTitle="Trang chủ / Về chúng tôi" />
 
         <!-- Quote -->
         <section class="max-w-875px md:block hidden mx-auto px-6 md:px-0 mb-24 h-428px">
@@ -49,7 +49,7 @@ const submitForm = () => {
                     <div class="flex justify-center">
                         <i class='bx bxs-quote-alt-left text-30px italic'></i>
                     </div>
-                    <p class="text-35px italic font-light playfair-display font-400">
+                    <p class="text-35px italic font-light playfair-display font-400 pt-24px pb-34px">
                         Style is a way to say who you are without having to speak.
                     </p>
                     <p class="text-sm text-gray-600">- Rachel Zoe</p>
@@ -90,13 +90,13 @@ const submitForm = () => {
                         class="w-full md:(w-477px text-left) text-center animate-on-scroll opacity-0 translate-y-5 transition-all duration-700">
                         <h2 class="text-32px md:text-50px text-center font-500 mb-4 playfair-display">Thứ bạn nhận lại
                         </h2>
-                        <p class="text-gray-700 text-base md:text-22px font-400 leading-200% md:pl-12">
+                        <p class="text-des md:pl-12">
                             Khách hàng của B Design không đơn thuần mặc đẹp.
                         </p>
-                        <p class="text-gray-700 text-base md:text-22px font-400 leading-200% md:pl-12">
+                        <p class="text-des md:pl-12">
                             Họ trở nên nổi bật, tự tin và mang theo dấu ấn cá nhân ở bất kỳ đâu.
                         </p>
-                        <p class="text-gray-700 text-base md:text-22px font-400 leading-200% md:pl-12">
+                        <p class="text-des md:pl-12">
                             Mỗi thiết kế là một tác phẩm – kết hợp giữa nghệ thuật và kỹ thuật, giữa cảm xúc và sự chỉn
                             chu.
                         </p>
@@ -163,5 +163,17 @@ const submitForm = () => {
     font-family: 'Playfair Display', serif;
     font-optical-sizing: auto;
     font-weight: 500;
+}
+
+.text-des {
+    color: #4D5053;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+    /* 32px */
+    letter-spacing: 0.16px;
 }
 </style>

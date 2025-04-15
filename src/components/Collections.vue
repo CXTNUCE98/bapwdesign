@@ -43,10 +43,10 @@ const collections = [
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
             <div v-for="(item, index) in collections" :key="index"
-                class="bg-white overflow-hidden group hover:shadow-md transition-all duration-300">
+                class="bg-white overflow-hidden group  transition-all duration-300">
                 <div class="overflow-hidden">
                     <img :src="item.image" alt="collection image"
-                        class="w-full h-525px object-cover transform group-hover:scale-105 transition duration-300"
+                        class="w-full h-525px object-cover transform transition duration-300"
                         :class="item.css" />
                 </div>
                 <div class="flex justify-between items-center">
@@ -56,7 +56,7 @@ const collections = [
                     </div>
                     <div class="flex justify-end">
                         <button
-                            class="w-70px h-70px rounded-full bg-#F4F0EC hover:bg-gray-200 flex items-center justify-center transition">
+                            class="w-70px h-70px rounded-full bg-#F4F0EC  flex items-center justify-center transition">
                             <i class='bx bx-chevron-right text-30px text-#292F36'></i>
                         </button>
                     </div>

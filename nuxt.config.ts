@@ -2,12 +2,14 @@
 export default defineNuxtConfig({
   ssr: true,
   srcDir: 'src/',
+
   imports: {
     dirs: [
       'constants',
       'composables',
     ],
   },
+
   app: {
     head: {
       link: [
@@ -23,18 +25,24 @@ export default defineNuxtConfig({
     },
     baseURL: '/',
   },
+
   devtools: { enabled: true },
   modules: ['@vueuse/nuxt', "@nuxtjs/tailwindcss", '@element-plus/nuxt', '@unocss/nuxt', '@vue-macros/nuxt', '@nuxtjs/sitemap'],
+
   sitemap: {
     siteUrl: 'https://bapwdesign.vercel.app/',
   },
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
-  },  
+  },
+
   css: [
     'boxicons/css/boxicons.min.css'
   ],
+
+  compatibilityDate: '2025-04-15',
 })

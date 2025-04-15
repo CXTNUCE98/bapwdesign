@@ -18,12 +18,13 @@ defineProps<{
         </div>
 
         <!-- Text -->
-        <div class="flex-1 space-y-3 text-gray-700 max-w-[453px]">
+        <div class="flex-1  text-gray-700 max-w-[453px]">
             <div class="flex justify-between items-center gap-3">
                 <img :src="icon" alt="icon" class="w-[80px] h-[80px] md:(w-[92px] h-[92px])" />
                 <span class="text-[98px] md:text-[120px] dm-serif text-white">{{ number }}</span>
             </div>
-            <h2 class="text-[32px] md:text-[35px] text-[#292F36] font-medium playfair-display leading-[110%]">{{ title
+            <h2 class="text-[32px] pt-20px pb-16px md:(text-[35px] pt-40px pb-24px) text-[#292F36] font-medium playfair-display leading-[110%]">{{
+                title
                 }}</h2>
             <p class="text-base md:text-[22px] font-normal text-[#4D5053] leading-relaxed">
                 <slot />

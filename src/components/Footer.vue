@@ -33,12 +33,11 @@ const socialLinks = [
     <footer class="mt-24 pt-16 pb-8 border-t-1 border-#C9C9C9 ">
         <div class="container mx-auto px-4">
             <!-- Main Footer Content -->
-            <div class="flex flex-col gap-8 mb-12 justify-center md:(justify-start flex-row)">
+            <div class="flex flex-col mb-66px justify-center gap-0 md:(justify-start flex-row gap-8)">
                 <!-- Brand Section -->
-                <div class="grow-2 text-center max-w-393px md:text-left">
+                <div class="grow-2 text-center max-w-393px md:text-left pb-100px">
                     <NuxtLink to="/" class="text-40px font-bold flex gap-2 md:justify-start justify-center items-end playfair-display text-#292F36">
-                        <img src="@/public/logo.png" class="pb-3 h-48px" />
-                        Design
+                        <img src="@/public/logo.png" class="pb-3 h-48px" />                        
                     </NuxtLink>
 
                     <p class="text-gray-600 mb-6 text-22px md:px-0 px-2">
@@ -56,10 +55,10 @@ const socialLinks = [
 
                 <!-- Footer Links -->
                 <template v-for="(links, title) in footerLinks" :key="title">
-                    <div class="grow-1 md:(block text-left) flex flex-col items-center text-center" :class="{'grow-2' :title === 'Liên hệ'}">
-                        <h4 class="font-500 mb-4 text-25px playfair-display">{{ title }}</h4>
-                        <ul class="space-y-2">
-                            <li v-for="link in links" :key="link.path">
+                    <div class="grow-1 md:(block text-left) flex flex-col items-center text-center pb-30px" :class="{'grow-2' :title === 'Liên hệ'}">
+                        <h4 class="font-500 mb-24px text-25px playfair-display">{{ title }}</h4>
+                        <ul class="">
+                            <li v-for="link in links" :key="link.path" class="pb-24px">
                                 <NuxtLink :to="link.path"
                                     class="text-#4D5053 text-22px font-400 hover:text-black transition-colors">
                                     {{ link.label }}
