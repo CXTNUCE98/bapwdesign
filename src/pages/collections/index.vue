@@ -16,53 +16,63 @@ import Product12 from "@/public/products/product_6.png"
 import Product13 from "@/public/products/product_7.png"
 import Product14 from "@/public/products/product_8.png"
 
+import Product15 from "@/public/products/product_9.jpg"
+import Product16 from "@/public/products/product_10.jpg"
+import Product17 from "@/public/products/product_11.jpg"
+import Product18 from "@/public/products/product_12.jpg"
+import Product19 from "@/public/products/product_13.jpg"
+import Product20 from "@/public/products/product_14.jpg"
+import Product21 from "@/public/products/product_15.jpg"
+import Product22 from "@/public/products/product_16.jpg"
+import Product23 from "@/public/products/product_17.jpg"
+
 // Data for the gallery items
 const galleryItems = [
     {
         id: 1,
-        image: Product7,
+        image: Product22,
         title: 'Title',
         subtitle: 'Subtitle / Subtitle'
     },
     {
         id: 2,
-        image: Product8,
+        image: Product15,
         title: 'Title',
         subtitle: 'Subtitle / Subtitle'
     },
     {
         id: 3,
-        image: Product9,
+        image: Product16,
         title: 'Title',
         subtitle: 'Subtitle / Subtitle'
     },
     {
         id: 4,
-        image: Product10,
+        image: Product17,
         title: 'Title',
         subtitle: 'Subtitle / Subtitle'
     },
     {
         id: 5,
-        image: Product11,
+        image: Product18,
         title: 'Title',
         subtitle: 'Subtitle / Subtitle'
     },
     {
         id: 6,
-        image: Product12,
+        image: Product19,
         title: 'Title',
         subtitle: 'Subtitle / Subtitle'
     },
     {
         id: 7,
-        image: Product14,
+        image: Product20,
         title: 'Title',
         subtitle: 'Subtitle / Subtitle'
     },
     {
         id: 8,
-        image: Product13,
+        image: Product21,
         title: 'Title',
         subtitle: 'Subtitle / Subtitle'
     }
@@ -71,13 +81,13 @@ const galleryItems = [
 const galleryItems1 = [
     {
         id: 1,
-        image: Product10,
+        image: Product7,
         title: 'Title',
         subtitle: 'Subtitle / Subtitle'
     },
     {
         id: 2,
-        image: Product4,
+        image: Product23,
         title: 'Title',
         subtitle: 'Subtitle / Subtitle'
     },
@@ -107,7 +117,7 @@ const galleryItems1 = [
     },
     {
         id: 7,
-        image: Product3,
+        image: Product11,
         title: 'Title',
         subtitle: 'Subtitle / Subtitle'
     },
@@ -122,7 +132,7 @@ const galleryItems1 = [
 const galleryItems2 = [
     {
         id: 1,
-        image: Product1,
+        image: Product13,
         title: 'Title',
         subtitle: 'Subtitle / Subtitle'
     },
